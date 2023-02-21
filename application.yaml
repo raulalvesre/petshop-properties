@@ -7,3 +7,11 @@ security:
 server:
     error:
         include-stacktrace: never
+spring:
+    jpa:
+        defer-datasource-initialization: true
+    hibernate:
+        ddl-auto: create
+    sql:
+        init:
+            mode: always
